@@ -1,0 +1,173 @@
+    body{
+      background-color:     
+    }
+
+    label{
+      line-height: 1.8;
+      font-weight: 600;
+    }
+
+    input[type="text"],input[type="email"], input[type="url"], input[type="tel"]{
+      /*border-radius: 5px;*/
+      border-bottom: solid 1px; 
+      border-right:0; 
+      border-left:0; 
+      border-top:0; 
+      width:100%;
+      font-size:1.1em;
+      outline: none;
+    }
+
+    [for="black"], [for="nativo"], [for="asiatico_oriental"], [for="asiatico_oriental"], [for="latino"], [for="medioriental"], [for="del_pacifico"], [for="surasiatico"], [for="sudesteasiatico"], [for="blanco"], [for="indefinido"], [for="hombre"], [for="mujer"], [for="noBinario"], [for="noEspecificado"], [for="no_lista"]{
+      font-weight:400;
+    }
+
+    input[type="checkbox"]{
+      width:auto;
+    }
+    input:focus, textarea:focus{
+      border-right:#ccc solid 1px; 
+      border-left:#ccc solid 1px; 
+      border-top:#ccc solid 1px; 
+    }
+
+    input:valid, textarea:valid{
+     border-bottom: solid 1.5px #0d6efd; 
+    }
+
+    input[type="file"]{
+      display:none;
+    }
+
+    .formulario{
+      padding: 2% 27% 27% 27%;
+    }
+
+    .encabezado--uno{
+      
+    }
+
+    .autorizado--aplicante{
+      grid-column-start: 1;
+      grid-column-end:4;
+    }
+
+    .encabezado--tres{
+      font-weight: 200;
+    }
+
+    .obligatorio_{
+      color:red;
+    }
+
+    .formulario_body{
+      display: grid;;
+      grid-template-columns: auto auto auto auto;
+      gap: 20px;
+    }
+
+    .nombre--aplicante{
+       grid-column-start: 1;
+       grid-column-end: 2;
+    }
+
+    .apellido--aplicante{
+       grid-column-start: 2;
+       grid-column-end: 4;
+    }
+
+    .descripcion--para--aplicante{
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+
+    .email--aplicante{
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+
+     .celular--aplicante{
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+
+    .curriculum--aplicante{
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+
+    .mejor_trabajo--aplicante{
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+
+    .github--aplicante{
+      grid-column-start:1;
+      grid-column-end: 4;
+    }
+
+    select{
+      margin-top:0.5em;
+      font-size: 17px;
+      border-radius:5px;
+      border: solid 1px;
+    }
+
+    textarea{
+      /*border-radius:5px;*/
+      border-bottom: solid 1px; 
+      border-right:0; 
+      border-left:0; 
+      border-top:0; 
+      height: 80px;
+      width: 100%;
+      resize: vertical;
+      outline: none;
+    }
+
+
+
+    .otros_datos--aplicante{
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+
+    .custom-file-upload {
+    border: 1px solid black;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.boton_acciones{
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+input[type="reset"]{
+  border-radius: 25px;
+  border: 1px solid #dd4655;
+  background-color: #dc3545;
+  padding:12px;
+  color:white;
+}
+
+input[type="reset"]:hover{
+  background: #dd4655;
+  transition: background 0.15s ease 0s, border-color 0.15s ease 0s;
+  cursor: pointer;
+}
+
+input[type="submit"]{
+  border-radius: 25px;
+  border: 1px solid #222234;
+  padding:12px;
+  background: #222234;
+  color:white;
+}
+
+input[type="submit"]{
+  transition: background 0.15s ease 0s, border-color 0.15s ease 0s;
+  cursor: pointer;
+}

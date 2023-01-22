@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<!--Proyecto creado para tarea de Diseño de Portales Web. Unphu.-->
+<head>
+  <meta charset="utf-8">
+	<title>Formulario web para Karina</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="Form.png" type="image/x-icon" />
+</head>
+
+<body>
+<div class="formulario">
+  <div class="formulario_header">
+    <h1 class="encabezado--uno">Aplica a este trabajo:</h1>
+    <h3 class="encabezado--tres">Ingeniero de software</h3>
+  </div>  
+  <form class="formulario_body">
+    <div class="descripcion--para--aplicante">
+      <p>
+        Lee cuidadosamente. Rellena todos los campos obligatorios (<span class="obligatorio_">*</span>)
+      </p>
+    </div>
+    <div class="nombre--aplicante">
+      <label>Nombre: </label>
+      <input type="text" placeholder="Nombre" maxlength="40" minlegth="1" required>
+    </div>
+    <div class="apellido--aplicante">
+       <label>Apellido: </label>
+      <input type="text" placeholder="Apellido" maxlength="40" minlegth="1" required>
+    </div>
+    <div class="email--aplicante">
+      <label>E-mail: </label>
+      <input type="email" placeholder="tunombre@sitio.com" maxlength="60" minlegth="1" required>
+    </div>
+     <div class="celular--aplicante">
+      <label>Número teléfonico (o Celular): </label>
+      <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000" maxlength="100" minlegth="1" required>
+    </div>
+    <div class="curriculum--aplicante">
+      <span>Curriculum: </span>
+      <label class="custom-file-upload">
+        <input  type="file" 
+                oninput="output_archivo.value=archivo--aplicante.value"                 id="archivo--aplicante" 
+                accept=".pdf, .csv, .doc, .docx"/>
+        <i class="fa fa-cloud-upload"></i> Subir archivo local
+      </label>
+      <small>Aceptamos archivos .pdf, .csv, .doc, .docx</small>
+      <br>
+      <output name="output_archivo" for="archivo--aplicante"></output>
+    </div>
+    <div class="mejor_trabajo--aplicante">
+      <label for="mejor_trabajo--aplicante">
+        Describenos brevemente tu trabajo más significativo
+      </label>
+      <br>
+      <textarea placeholder="Empieza a escribir..." required></textarea>
+    </div>
+    <div class="github--aplicante">
+      <label for="github--aplicante">
+        Compartenos algún link hacia tu portafolio, Github o
+        repositorio de trabajo.
+      </label>
+      <input type="url" placeholder="https://github.com/usuario" id="github--aplicante" name="github--aplicante" required>
+    </div>
+    <div class="autorizado--aplicante">
+      <label for="autorizado--aplicante">
+        ¿Estas autorizado legalmente para trabajar en la República 
+        Dominicana?
+      </label>
+      <br>
+      <span>
+        Nosotros proveemos inmigración y financiamiento a nuevos
+        empleados basandonos en sus circunstancias únicas.
+      </span>
+      <br>
+      <select name="autorizado--aplicante" id="autorizado--aplicante">
+        <option value="Si">Si</option>
+        <option value="No">No</option>
+        <option value="Otro">Otro</option>
+      </select>
+    </div>
+    <div class="otros_datos--aplicante">
+      <h2>Otros datos</h2>
+      <p>
+        En correspondencia con nuestros requerimientos informativos (y          en vista de entender la diversidad del grupo candidatos)     
+        preguntaremos cuestiones demograficas mas abajo. Responder a     las siguientes preguntas no es obligatorio y es totalmente voluntario.
+      </p>
+      <label>
+        Identifico mi origen étnico como (seleccione la descripción a   continuación que mejor corresponda a la raza o grupo étnico con el que se identifica):
+      </label>
+    <br>
+    <input type="checkbox" id="black" name="black" value="Black/of African descent">
+    <label for="black">Negro o de ascendencia africana</label><br>
+    <input type="checkbox" id="nativo" name="nativo" value="Nativo de Alaska / Indio Americano / Nativo Americano">
+    <label for="nativo">Nativo de Alaska / Indio Americano / Nativo Americano</label><br>
+    <input type="checkbox" id="asiatico_oriental" name="asiatico_oriental" value="Asiatico Oriental (incluyendo a Chinos, Japoneses, Coreanos, Mongoles, Tibetanos y Taiwaneses)">
+    <label for="asiatico_oriental">Asiatico Oriental (incluyendo a Chinos, Japoneses, Coreanos, Mongoles, Tibetanos y Taiwaneses)</label><br>
+    <input type="checkbox" id="latino" name="latino" value="latino">
+    <label for="latino">Latino.</label>
+    <br>
+    <input type="checkbox" id="medioriental" name="medioriental" value="medioriental">
+    <label for="medioriental">Medio Oriental (de Oriente Medio)</label>
+    <br>
+     <input type="checkbox" id="del_pacifico" name="del_pacifico" value="Isleño del Pacífico">
+    <label for="del_pacifico">Isleño del Pacífico.</label>
+      <br>
+      <input type="checkbox" id="surasiatico" name="surasiatico" value="Sudasiático">
+    <label for="surasiatico">Sudasiático (incluidos los de Bangladesh, Bután, India, Nepal, Pakistán y Sri Lanka)</label>
+      <br>
+      <input type="checkbox" id="sudesteasiatico" name="sudesteasiatico" value="Sudeste asiático">
+    <label for="sudesteasiatico">Del sudeste asiático (incluyendo los birmanos, camboyanos, filipinos, hmong, indonesios, laosianos, malasios, mien, singapurenses, tailandeses y vietnamitas)
+</label>
+       <br>
+      <input type="checkbox" id="blanco" name="blanco" value="Blanco">
+      <label for="blanco">
+        Blanco o  Caúcasico.
+      </label>
+      <br>
+      <input type="checkbox" id="indefinido" name="indefinido" value="Indefinido">
+      <label for="indefinido">
+        Mi identidad no está en la lista.
+      </label>
+      <br>
+      <label>Yo identifico mi género como: </label>
+      <br>
+      <input type="checkbox" id="hombre" name="hombre" value="Hombre">
+      <label for="hombre">
+        Hombre
+      </label>
+      <br>
+      <input type="checkbox" id="mujer" name="mujer" value="Mujer">
+      <label for="mujer">
+        Mujer
+      </label>
+      <br>
+      <input type="checkbox" id="noBinario" name="noBinario" value="No-binario">
+      <label for="noBinario">
+        No-Binario
+      </label>
+      <br>
+      <input type="checkbox" id="noEspecificado" name="noEspecificado" value="no-especificado">
+      <label for="noEspecificado">
+        Prefiero no especificar
+      </label>
+      <br>
+      <input type="checkbox" id="no_lista" name="no_lista" value="No en la lista">
+      <label for="no_lista">
+        Mi identidad de género no esta en la lista
+      </label>
+    </div>
+    <div class="boton_acciones">
+      <input type="reset">
+      <input type="submit">
+    </div>
+  </form>
+</div>
+</body>
+
+</html>
